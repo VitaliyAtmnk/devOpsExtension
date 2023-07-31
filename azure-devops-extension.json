@@ -1,0 +1,63 @@
+{
+    "manifestVersion": 1,
+    "id": "183729465",
+    "publisher": "183729465",
+    "version": "1.0.34",
+    "name": "Task Request Výkaz",
+    "description": "Azure DevOps Extension",
+    "categories": [
+        "Azure Repos",
+        "Azure Boards",
+        "Azure Pipelines",
+        "Azure Test Plans",
+        "Azure Artifacts"
+    ],
+    "contributions": [
+        {
+            "id": "sample-hub-group",
+            "type": "ms.vss-web.hub-group",
+            "description": "Adds a 'Task Request' hub group at the project/team-level",
+
+            "targets": [
+                "ms.vss-web.project-hub-groups-collection"
+            ],
+            "properties": {
+                "name": "Task Request",
+                "iconAsset": "183729465.183729465/logo.png",
+                "_sharedData": {
+                    "assets": [
+                        "183729465.183729465/logo.png"
+                    ]
+                },
+                "order": 100
+            }
+        }
+     ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "logo.png"
+    },
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "files": [
+        {
+            "path": "static",
+            "addressable": true
+        },
+        {
+            "path": "dist",
+            "addressable": true
+        },
+        {
+            "path": "logo.png",
+            "addressable": true
+        }
+    ]
+}
